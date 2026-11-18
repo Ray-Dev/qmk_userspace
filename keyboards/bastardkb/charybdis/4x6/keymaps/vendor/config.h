@@ -13,6 +13,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * modified 2026.11.18 Jeremy Raygor
  */
 #pragma once
 
@@ -34,3 +35,16 @@
 // - `CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_THRESHOLD`
 // #define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 #endif // POINTING_DEVICE_ENABLE
+
+//change vendor_ID to Logitech
+#undef VENDOR_ID
+#define VENDOR_ID 0x046D
+#undef MANUFACTURER
+#define MANUFACTURER "Logitech"
+
+//change keyboard model to k120
+#undef PRODUCT_ID
+#define PRODUCT_ID 0xC31C
+#undef PRODUCT
+#define PRODUCT "USB Keyboard"
+
